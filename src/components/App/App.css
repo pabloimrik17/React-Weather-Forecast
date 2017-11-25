@@ -1,0 +1,98 @@
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body {
+  background: #f9b41d;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.zip-form {
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.zip-form label {
+  vertical-align: center;
+}
+
+.zip-form input {
+  margin: 0 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.zip-form button {
+  padding: 7px 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.weather-list {
+  margin: 20px 0;
+}
+
+.weather-list-item {
+  min-width: 100px;
+  margin: 0 10px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weather-list-item :first-child {
+  margin-left: 0;
+}
+
+.weather-list-item :last-child{
+  margin-right: 0;
+}
+
+.weather-list-item > h2 {
+  font-weight: normal;
+}
+
+.current-day {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.details {
+  justify-content: flex-start;
+}
+
+.details > div {
+  padding-left: 20px;
+}
+
+.details > div :first-child {
+  padding-left: 0;
+}
+
+.details .weather {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.details .weather p {
+  margin: 0;
+}
+
+.details .weather img {
+  vertical-align: middle;
+}
