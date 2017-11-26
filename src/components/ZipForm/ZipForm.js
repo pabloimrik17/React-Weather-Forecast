@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class ZipForm extends React.Component {
     constructor(props) {
@@ -42,5 +44,12 @@ class ZipForm extends React.Component {
         )
     }
 }
+
+ZipForm.propTypes = {
+    zipcode: PropTypes.string.isRequired
+};
+
+// For optional props in component
+ZipForm.defaultProps = {};
 
 export default ZipForm;
