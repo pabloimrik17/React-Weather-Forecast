@@ -24,9 +24,9 @@ class ZipForm extends React.Component {
     }
 
     inputUpdated(e) {
-        const { value } = e.target;
+        const {value} = e.target;
 
-        this.setState({ zipcode: value});
+        this.setState({zipcode: value});
     }
 
     render() {
