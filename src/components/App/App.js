@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { get } from 'axios';
 import ZipForm from "../ZipForm/ZipForm";
+import WeatherList from "../Weather/WeatherList";
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   onFormSubmit(zipcode) {
-    get(`http://localhost:3000/weather/${zipcode}`) // IMAGINARY API
+    get(`http://localhost:3000/weather/${zipcode}`) // FAKE API
       .then(({data}) => {
         const { city, list: dates} = data;
         this.setState({zipcode, city, dates, selectedDate: null});
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div className="app">
         <ZipForm onSubmit={this.onFormSubmit}/>
+          <WeatherList days={this.state.dates}/>
       </div>
     );
   }
